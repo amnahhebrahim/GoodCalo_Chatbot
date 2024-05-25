@@ -1,0 +1,122 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+
+    
+- intent: name_and_contact
+  examples: |
+    - [Aya Hassan](full_name) and my phone's number is [88456312](contact)
+    - My full name is [Sarah Smith](full_name) and my phone is [77665544](contact)
+    - I'm [Casey Steven](full_name) and my contact is [99008866](contact)
+    - I am [Tina Lee](full_name) and this is my contact [12345678](contact)
+    - [78945612](contact), [Muhammed Suleiman](contact)
+    - [Naomi Idris](contact) and here's my mobile number [15975382](contact)
+    - yes sure, I am [Maya Khan](contact),  and you can reach through [74125836](contact)
+    - [Kim Haneul], and here's my contact [8525828](contact)
+    - My name's [Nia Gowon], and my phone is [9515951](contact)
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: goodcal
+  examples: |
+    - tell me more about goodcal
+    - what is goodcal
+    - what does goodcal provide in terms of services?
+    - what packages does goodcal have?
+    - What is GoodCal and how does it relate to meal planning
+    - Can you provide more information about GoodCal's meal plan service?
+    - What types of meal plans does GoodCal offer?
+    - Are there different meal plans or packages available through GoodCal?
+    - How does GoodCal customize its meal plans to meet individual dietary needs?
+
+#- intent: submit
+#  examples: |
+#    - i want to register for a [monthly](type_plan) meal plan of [one](quantity_meals) meal a day
+#    - i want to subscribe to a [weekly](type_plan) meal plan of [three](quantity_meals) meals a day
+#    - i'd like to register for [weekly](type_plan) meal plan
+#    - i'd like to subscribe to a [monthly](type_plan) meal plan
+#    - I'm interested in choosing a [monthly](type_plan) meal plan for [two](quantity_meals) meals
+#    - im interested in choosing a plan of [three](quantity_meals) meals
+#    - im interested in registering for a plan of [one](quantity_meals) meal
+#    - im interested in subscribing to a plan of [two](quantity_meals) meals
+#    - [2](quantity_meals) meals
+#    - [3](quantity_meals)
+#    - [weekly]()
+#    - [monthly](type_plan)
+#    - [one](quantity_meals)
+
+
+#- intent: register
+#  examples: |
+#    - i want to register for a meal plan
+#    - i want to subscribe to a meal plan
+#    - i'd like to register for a meal plan
+#    - i'd like to subscribe to a meal plan
+#    - I'm interested in choosing a meal plan
+#    - im interested in choosing a plan
+#    - [two](quantity_meals)
+#    - im interested in registering for a meal plan
+#    - Do you have any weekly meal plans?
+#    - Do you have any monthly meal plans?
+#    - What meal plans do u have?
+#    - I would like to choose a meal plan
+#    - I want to join a meal plan
+#    - im interested in subscribing to a plan
+
+
+#- intent: confirm_regsitration
+#  examples: |
+#    - yes
+#    - y
+#    - indeed
+#    - of course
+#    - that sounds good
+#    - correct
+#    - that's correct
+#    - yup
+#    - yes, that's correct

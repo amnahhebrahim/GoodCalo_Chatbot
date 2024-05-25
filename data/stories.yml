@@ -1,0 +1,24 @@
+version: "3.1"
+
+stories:
+
+- story: typical path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: name_and_contact
+    entities:
+      - full_name: Alex
+      - contact: 89562314
+  - slot_was_set:
+    - full_name: Alex
+    - contact: 89562314
+  - action: action_say_name
+
+- story: about us
+  steps:
+  - intent: goodcal
+  - action: action_say_name
+
+
+
