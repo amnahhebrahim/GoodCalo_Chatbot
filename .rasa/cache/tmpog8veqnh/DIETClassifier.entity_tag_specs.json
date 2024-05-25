@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-contact",
+      "2": "I-contact",
+      "3": "L-contact",
+      "4": "U-contact",
+      "5": "B-full_name",
+      "6": "I-full_name",
+      "7": "L-full_name",
+      "8": "U-full_name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-contact": 1,
+      "I-contact": 2,
+      "L-contact": 3,
+      "U-contact": 4,
+      "B-full_name": 5,
+      "I-full_name": 6,
+      "L-full_name": 7,
+      "U-full_name": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]
