@@ -107,15 +107,3 @@ nlu:
    - I want to join a meal plan
    - im interested in subscribing to a plan
 
-
-# - intent: confirm_regsitration
-#  examples: |
-#    - yes
-#    - y
-#    - indeed
-#    - of course
-#    - that sounds good
-#    - correct
-#    - that's correct
-#    - yup
-#    - yes, that's correct

@@ -12,3 +12,19 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- rule: Activate Registration Form
+  steps:
+  - intent: register
+  - action: registeration_form
+  - active_loop: registeration_form
+
+- rule: Submit Registration Form
+condition:
+- active_loop: registeration_form
+steps:
+- action: registeration_form
+- active_loop: null
+- slot_was_set:
+  - requested_slot: null
+- action: utter_submit
+- action: utter_registration_slots
