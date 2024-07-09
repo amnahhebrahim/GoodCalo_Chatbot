@@ -74,22 +74,6 @@ nlu:
     - Are there different meal plans or packages available through GoodCal?
     - How does GoodCal customize its meal plans to meet individual dietary needs?
 
-- intent: submit
-  examples: |
-   - i want to register for a [monthly](type_plan) meal plan of [one](quantity_meals) meal a day
-   - i want to subscribe to a [weekly](type_plan) meal plan of [three](quantity_meals) meals a day
-   - i'd like to register for [weekly](type_plan) meal plan
-   - i'd like to subscribe to a [monthly](type_plan) meal plan
-   - I'm interested in choosing a [monthly](type_plan) meal plan for [two](quantity_meals) meals
-   - im interested in choosing a plan of [three](quantity_meals) meals
-   - im interested in registering for a plan of [one](quantity_meals) meal
-   - im interested in subscribing to a plan of [two](quantity_meals) meals
-   - [2](quantity_meals) meals
-   - [3](quantity_meals)
-   - [weekly]()
-   - [monthly](type_plan)
-   - [one](quantity_meals)
-
 
 - intent: register
   examples: |
@@ -107,3 +91,19 @@ nlu:
    - I want to join a meal plan
    - im interested in subscribing to a plan
 
+
+- intent: submit
+  examples: |
+   - i want to register for a [monthly](type_plan) meal plan of [one](quantity_meals) meal a day
+   - i want to subscribe to a [weekly](type_plan) meal plan of [three](quantity_meals) meals a day
+   - i'd like to register for [weekly](type_plan) meal plan
+   - i'd like to subscribe to a [monthly](type_plan) meal plan
+   - I'm interested in choosing a [monthly](type_plan) meal plan for [two](quantity_meals) meals
+   - im interested in choosing a plan of [three](quantity_meals) meals
+   - im interested in registering for a plan of [one](quantity_meals) meal
+   - im interested in subscribing to a plan of [two](quantity_meals) meals
+   - [2](quantity_meals) meals
+   - [3](quantity_meals)
+   - [weekly]()
+   - [monthly](type_plan)
+   - [one](quantity_meals)
