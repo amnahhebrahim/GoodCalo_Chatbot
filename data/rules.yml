@@ -18,12 +18,6 @@ rules:
   - action: registeration_form
   - active_loop: registeration_form
 
-- rule: Activate Registration Form
-  steps:
-  - intent: submit
-  - action: registeration_form
-  - active_loop: registeration_form
-
 - rule: Submit Registration Form
 condition:
 - active_loop: registeration_form

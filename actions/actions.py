@@ -53,7 +53,7 @@ class validate_registration_form(FormValidationAction):
         if slot_value.lower() not in ALLOWED_PERIODS:
             dispatcher.utter_message(text=f"We only accept weekly or monthly subscriptions")
             return {"type_plan": None}
-        dispatcher.utter_message(text=f"Ok, I've registered you as a {slot_value} user")
+        dispatcher.utter_message(text=f"Ok, I've registered you as a {slot_value} client")
         return {"type_plan": slot_value}
 
 
