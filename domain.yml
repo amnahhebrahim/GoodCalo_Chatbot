@@ -7,22 +7,47 @@ intents:
   - deny
   - bot_challenge
   - goodcal
+  - register
+  - submit
 
 entities:
   - contact
   - full_name
+  - type_plan
+  - quantity_meals
+
 
 slots:
   contact:
     type: text
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: contact
   full_name:
     type: text
+    influence_conversation: true
     mappings:
       - type: from_entity
         entity: full_name
+  type_plan:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: type_plan
+  quantity_meals:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: quantity_meals
+ 
+forms:
+  registration_form:
+    required_slots:
+    - type_plan
+    - quantity_meals
 
 responses:
   utter_greet:
@@ -48,8 +73,22 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  utter_registration_slots:
+  - text: "I have registered you for the following program: {type_plan}, {quantity_meals}"
+  utter_ask_type_plan:
+  - text: "What period would you like to register for (weekly or monthly)?"
+
+  utter_ask_quantity_meals:
+  - text: "Which mealplan would you like to register in (one, two or three meals)?"
+
+  utter_submit:
+  - text: "Thank you, I will now register you"
+
 actions:
   - action_say_name
+  - validate_registration_form
+  - utter_registration_slots
+  - utter_submit
 
 session_config:
   session_expiration_time: 60
